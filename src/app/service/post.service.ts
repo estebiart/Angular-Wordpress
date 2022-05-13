@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders,HttpResponse,HttpRequest } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,8 +8,16 @@ import { HttpClient, HttpHeaders,HttpResponse,HttpRequest } from '@angular/commo
 export class PostService {
   
   public url:string;
-  this.http.get('http://localhost/wordpress/wp-json/wp/v2/pages').
+
   constructor(private http: HttpClient) {
-    this.url
+    this.url="http://localhost/wordpress/wp-json";
    }
+
+   getPosts() : Observable<any>{
+     return this.http.get(this.url+"/wp/v2/posts");
+   }
+
+   getPostsSearch(wordSearch) : Observable<any>{
+    return this.http.get(this.url+"/wp/v2/posts?search=" + wordSearch);
+  }
 }
