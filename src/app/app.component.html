@@ -1,6 +1,112 @@
 <app-nav></app-nav>
 <!-- div *ngFor="let post of posts;">
 <h2>{{ post.title.rendered}}</h2-->
+    <main class="productos">
+        <div class="container-fluid gx-5">
+
+
+<div class="container banner" >
+    <div class="row">
+
+        <div class="col-sm-6" style="color:aliceblue">
+
+                <h1> Built by truckers
+                </h1>
+                <p> Factortek takes the extra mile 
+                </p>
+
+
+        </div>
+        <div class="col-sm-6 formulario">
+            <form id="form" action="./solicita_pedido.html" method="post" >
+                <br> <div>
+                <label for="p1" style="margin-top: 30px;" id="label1">Nombre del cliente</label> 
+                 <input type="text" name="p1" id="p1" style="margin: 10px;"> </div>
+                <br> <div><label for="p2" id="label2">Apellidos del cliente</label> 
+                     <input type="text" name="p2" id="p2" style="margin: 10px;"> </div>
+                <br> <div><label for="">Fecha</label> 
+                     <input type="date" name="" id=""style="margin: 10px;"> </div>
+                <br> <div><label for="">Número</label> 
+                     <input type="number" name="" id="" style="margin: 10px;"> </div>
+                <br> <div><label for="">Dirreción</label> 
+                     <input type="text" name="" id="" style="margin: 10px; margin-bottom: 50px;"> </div>
+                <br>
+
+                <input type="submit" value="Enviar" style="margin: 20px;" class="btn btn-1">
+    
+            </form >
+
+        </div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <h2> dont let</h2>
+        <p> turn your</p>
+        <div class="col-sm-6">
+            <div class="card">
+            <div class="card-body">
+                <div class="col-6">
+                    <img src="./../assets/icono3.png" alt="">
+                </div>
+                <div class="col-6">
+                    <h3>funding</h3>
+                    <ul>
+                        <li>ivoice</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+            <div class="card-body">
+                <div class="col-6">
+                    <img src="./../assets/icono3.png" alt="">
+                </div>
+                <div class="col-6">
+                    <h3>funding</h3>
+                    <ul>
+                        <li>ivoice</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+
+
+<footer style="background-color: rgba(138, 138, 60, 0.842);" >
+   <div class="encabezado__menu-responsive col-10">
+  
+                    <div class="encabezado__item current col-1"><a href="#">HOME</a></div>
+                    <div class="encabezado__item"><a href="#">FINANCIAL SOLUTIONS</a></div>
+                    <div class="encabezado__item"><a href="#">ABOUT US</a></div>
+                    <div class="encabezado__item"><a href="#">FAQ</a></div>
+                    <div class="encabezado__item"><a href="#">REFERRALS</a></div>
+                    <div class="encabezado__item"><a href="#">GET STARTED</a></div>
+                    <div class="encabezado__item"><a href="#">CONTACT US</a></div>
+              
+            </div>
+</footer>
+<script>
+    
+$("form").submit(function(e){
+
+if($("#p1").text()=="" ){
+    $("#label1").css("color","red");
+    event.preventDefault();
+}
+if($("#p2").text()=="" ){
+    $("#label2").css("color","red");
+    event.preventDefault();
+}
+
+});
+</script>
+
 <app-posts></app-posts>
 
 <p></p>

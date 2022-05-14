@@ -1,0 +1,13 @@
+.banner{
+    background-image: url(".././assets/banner-rentek.jpg");
+    background-color: #022658;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top left;
+    }
+    .formulario{
+        background-color: rgba(240, 248, 255, 0.583);
+        opacity: 80;
+        border-radius: 30px;
+    }
+    
